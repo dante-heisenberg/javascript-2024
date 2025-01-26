@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+</head>
+<body>
+    <script>
+        // Var
+        var nama = "Rizky Khapidsyah";
+        {
+            // var akan mengambil yang terakhir
+            var nama = "Ujang";
+            // console.log(nama);
+        }
+        // up to date atau mengambil yang terakhir
+        console.log(nama);
+
+        // Let
+        let umur = 20;
+        // scope atau prilaku dari let
+        {
+            // tidak akan mengambil dari luar scope
+            let umur = 25;
+            // console.log(umur);
+        }
+        // lebih mengutamakan yang di dalam scope
+        console.log(umur);
+
+        // Const
+        const tahunLahir = 2000;
+        // scope atau prilaku dari const
+        {
+            // tidak akan mengambil dari luar scope
+            const tahunLahir = 2001;
+            // console.log(umur);
+        }
+        // lebih mengutamakan yang di dalam scope
+        console.log(tahunLahir);
+
+        // NOTE:
+        // Tanpa menggunakan keyword var, let, const maka sebagai defaultnya adalah var
+        makan = "combro";
+        console.log(makan);
+    </script>
+</body>
+</html>
